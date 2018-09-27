@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:camomile="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".fragment.SplashFragment">
+
+
+    <TextView
+        android:layout_width="268dp"
+        android:layout_height="59dp"
+        android:layout_above="@+id/camomileSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="@string/splash_text"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <com.gmail.samehadar.iosdialog.CamomileSpinner
+        android:id="@+id/camomileSpinner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        camomile:clockwise="true"
+        camomile:spinnerColor="@color/white" />
+
+</RelativeLayout>
